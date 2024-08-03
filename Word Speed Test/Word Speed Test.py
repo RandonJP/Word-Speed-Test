@@ -5,7 +5,7 @@ import random
 
 def start_screen(stdscr):
     stdscr.clear()
-    stdscr.addstr("Welcome to the Capital One speed typing test!", curses.color_pair(3))
+    stdscr.addstr("Welcome to Randon's speed typing test!", curses.color_pair(3))
     stdscr.addstr("\nPress any key to begin!", curses.color_pair(3))
     stdscr.refresh()
     stdscr.getkey()
@@ -68,7 +68,7 @@ def main(stdscr):
     start_screen(stdscr)
     while True: 
         wpm_test(stdscr)
-        stdscr.addstr(2, 0, "Thankyou for visting my project! Press any key to continue and play again. ")
+        stdscr.addstr(2, 0, "Thank you for visting my project! Press any key to continue and play again. ")
         key = stdscr.getkey()
         
         if ord(key) == 27:
